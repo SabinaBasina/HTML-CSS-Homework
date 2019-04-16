@@ -19,7 +19,7 @@
   list-style: none;
 }
 
-.menu li, .menu h1, .menu ul {
+.menu li, .menu h1 {
   float: left;  
 }
 
@@ -47,4 +47,27 @@
 
 .fa-bell, .fa-user-circle, .fa-sort-down, h1 {
   color: white;  
+}
+
+.secondary-bar {  
+  display: flex;
+  align-items: center;
+}
+
+.secondary-bar ul {
+  width: 58%;
+  height: 75px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondary-bar ul li a {
+  text-decoration: none;
+}
+
+.secondary-bar ul li:first-child {
+  border-bottom: 3px #4d75a3 solid;
+  line-height: 75px;
 }
