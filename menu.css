@@ -1,0 +1,50 @@
+.menu div .top-bar {
+  height: 50%;
+  background-color: #4d75a3;   
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu h1 a {
+  text-decoration: none; 
+  color: white;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li, .menu h1, .menu ul {
+  float: left;  
+}
+
+.top-bar-left-part {
+  display: flex;
+  align-items: center;
+}
+
+.right-icons{
+  margin: 15px;
+}
+
+.menu .top-bar button {
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.fas, .far {
+  font-size: 16px;
+  color: #a2b1c9;
+}
+
+.fa-bell, .fa-user-circle, .fa-sort-down, h1 {
+  color: white;  
+}
