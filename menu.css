@@ -32,12 +32,27 @@
   margin: 15px;
 }
 
+.user-name{
+  font-size: 14px;
+}
+
 .menu .top-bar button {
   height: 100%;
+  margin: 0 5px 0 40px; 
   background: none;
   border: none;
   cursor: pointer;
   color: white;
+  outline: none;
+}
+
+.menu div button::before {
+  content: "";
+  height: 74px;
+  margin: -28px 0 0 -34px;
+  position: absolute;
+	padding-right: 1px;
+	box-shadow: 5px 0 0 #41638a;
 }
 
 .fas, .far {
@@ -47,6 +62,15 @@
 
 .fa-bell, .fa-user-circle, .fa-sort-down, h1 {
   color: white;  
+}
+
+.fa-comment::after {
+  content: "";
+  height: 74px;
+  margin: -28px 0 0 24px;
+  position: absolute;
+	padding-right: 1px;
+	box-shadow: 5px 0 0 #41638a;
 }
 
 .secondary-bar {  
@@ -65,6 +89,7 @@
 
 .secondary-bar ul li a {
   text-decoration: none;
+  color: #4d75a3;
 }
 
 .secondary-bar ul li:first-child {

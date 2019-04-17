@@ -1,0 +1,110 @@
+.about-user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.user_avatar {
+  background-color: #bbc4d1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-left: 6%;
+}
+
+.user_avatar, .user_status {
+  float: left;
+}
+
+.user_name {
+  font-size: 24px;
+  color: #3f4f5f;
+  font-weight: 600;
+  line-height: 0px;
+  margin-bottom: -5px;
+}
+
+.user-information{
+  width: 90%;
+  font-size: 14px;
+  line-height: 24px;
+  color: #667a90;
+  font-weight: 400;
+}
+
+.user_status {
+  width: 55%;
+  margin-left: 6%;
+}
+
+.main{
+  width: 40%;
+}
+
+.sep{
+  width: 1px;
+  height: 100px;
+  background-color: #e5e5e5;
+}
+
+.more {
+  width: 56%;
+  justify-content: space-between;
+  margin-left: 1%;
+}
+
+.stats {  
+  width: 54%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-followers,
+.user-following,
+.user-photos,
+.user-videos {
+  float: left;
+  color: #4d75a3;
+}
+
+.user-followers::first-line,
+.user-following::first-line,
+.user-photos::first-line,
+.user-videos::first-line {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.name {
+  margin-top: -8px;
+  font-size: 15px;
+}
+
+.buttons {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.button {  
+  font-size: 16px;  
+  border-radius: 6px;  
+  width: 185px;
+  font-weight: 600;  
+  margin: 10px;
+}
+
+.send-message {
+  height: 49px;
+  background-color: #4d75a3;
+  border: none;
+  color: #ffffff;
+}
+
+.add-friend {  
+  height: 48px;
+  color: #4d75a3;
+  height: 48px;
+  background-color: #ffffff;
+  border: 2px solid #4d75a3;
+}
