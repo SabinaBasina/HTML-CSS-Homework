@@ -3,67 +3,62 @@
   <head>
     <meta charset="utf-8">
     <link href="markup.css" rel="stylesheet">
-    <link href="menu.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
     <link href="mainInformation.css" rel="stylesheet">
     <link href="moreInformation.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <header class="menu">
-
-      <div>    
-              
-        <nav class="top-bar">
-
-          <span class="top-bar-left-part">
-            
-            <h1><a href="#">social ui</a></h1>
-
+    <header class="header block">
+      <div class="top-bar">          
+        <span class="left-part">                
+          <h1><a href="#" class="header-name">social ui</a></h1>
+          <nav>      
             <ul class="left-icons">
-                <li><button><i class="fas fa-bell"></i></button></li>
-                <li><button><i class="fas fa-user-friends"></i></button></li>
-                <li><button><i class="fas fa-comment"></i></button></li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-bell"></i>
+                  <div class="notification">1</div>
+                </a>
+              </li>
+              <li><a href="#"><i class="fas fa-user-friends"></i></a></li>
+              <li><a href="#"><i class="fas fa-comment"></i></a></li>
             </ul>
-
-          </span>
-          
-
-          <ul class="right-icons">
-            <li>
-                <button class="user-name">
-                  John Doe
-                  <i class="far fa-user-circle"></i>
-                  <i class="fas fa-sort-down"></i>
-                </button>
-            </li>
-            <li><button><i class="fas fa-search"></i></button></li>
-            <li><button><i class="fas fa-sign-out-alt"></i></button></li>
-          </ul>
-
-        </nav>
-      
-        <nav class = "secondary-bar">
+          </nav>    
+        </span>
+        <nav class="right-icons"> 
           <ul>
+            <li>
+              <a href="#" class="user-name">
+                John Doe
+                <i class="far fa-user-circle"></i>
+                <i class="fas fa-sort-down"></i>
+              </a>
+            </li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+          </ul>    
+        </nav>        
+      </div>  
+      <div class="secondary-bar">    
+        <nav>
+          <ul class="top-header">
             <li><a href="#">Dialogues</a></li>
             <li><a href="#">Photos</a></li>
             <li><a href="#">Videos</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="#">Communities</a></li>
           </ul>
-        </nav>
-
-      </div>  
-    
+        </nav>     
+      </div> 
     </header>
 
-    <main>
+    <main class="block">
 
       <article class="main-information">
-        <section class="profile">
-
           <div class="about-user main">
             <div class="user_avatar">
-              <img src=""/>
+              <img src="https://via.placeholder.com/100"/>
             </div>
             <div class="user_status">
               <p class="user_name">
@@ -106,21 +101,17 @@
               </button>
             </div>            
           </div>
-
-        </section>
       </article>
 
       <article class="more-information">
-
-        <section class="news">
-
+        
+        <section class="activity-feed">
           <div class="news-header">
             <h2>Activity Feed</h2>
             <i class="fas fa-cog"></i>
           </div>
 
           <div class="news-content">
-
             <div class="news-content-photos">
               <i class="fas fa-image"></i>
               <div class="added-photos">
@@ -130,15 +121,22 @@
                   Added 4 photos to album <span>Summer</span>
                 </p>
                 <div class="photos">
-                  <div class="photo"></div>
-                  <div class="photo"></div>
-                  <div class="photo"></div>
-                  <div class="photo"></div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>
                 </div>
                 <div class="line">
                 </div>
-              </div>              
-              
+              </div>             
             </div>
 
             <div class="news-content-likes">
@@ -149,12 +147,15 @@
                   liked 2 photos of <span>Alex Wayne</span>
                 </p>
                 <div class="photos">
-                  <div class="photo"></div>
-                  <div class="photo"></div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>                  
                 </div>
-                <div class="line">
-                </div>
-              </div>               
+                <div class="line"></div>
+              </div>
             </div>
 
             <div class="news-content-adds">
@@ -173,8 +174,7 @@
                 <span>Alex Gilev</span>
                 created the <span>Bowling</span> event
               </p>
-              <div class="line">
-              </div>
+              <div class="line"></div>
             </div>
 
             <div class="news-content-links">
@@ -185,45 +185,166 @@
                   shared a link:
                 </p>
                 <div class="link">
-                  <div class="photo"></div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50"/>
+                  </div>
                   <p>
                     <span>Lorem ipsum dolor</span>
                     </br>
                     Lorem ipsum dolor sit amet, consectetur adipisicing ips...
                   </p>                  
                 </div>
-                <div class="link-line">
-                </div>
+                <div class="link-line"></div>
               </div> 
             </div>
 
-            <div class="news-content-more">
+            <div class="content-more">
               <p>Show earlier activity</p>
               <i class="fas fa-sort-down"></i>
             </div>
 
           </div>
-
         </section>
 
-        <section class="people-to-follow">
-
+        <section class="people-to-follow">        
           <div class="people-to-follow-header">
-            <h2></h2>
+            <h2>People to Follow</h2>
           </div>
 
-        </section>
-        <section class="message">
+          <div class="people-to-follow-content">
+            <div class="add-peoples">
+              <div class="add Alex_Wayne">
+                <div>
+                  <img src="https://via.placeholder.com/50"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    Alex Wayne
+                    <i class="fas fa-mobile-alt"></i>
+                    </br>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add David_Vane">
+                <div>
+                  <img src="https://via.placeholder.com/50"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    David Vane
+                    </br>
+                    <span>Out of town</span>
+                  </p>
+                </div>               
+                <button>+ Add</button>
+              </div>
+              <div class="add Kevin_Ertan">
+                <div>
+                  <img src="https://via.placeholder.com/50"/>
+                  <p>
+                    Kevin Ertan
+                    </br>
+                    <span>Don't sleep</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add Jane_Doe">
+                <div>
+                  <img src="https://via.placeholder.com/50"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    Jane Doe
+                    <i class="fas fa-mobile-alt"></i>
+                    </br>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add Alexander_Wilk">
+                <div>
+                  <img src="https://via.placeholder.com/50"/>
+                  <p>
+                    Alexander Wilk...
+                    </br>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add Alex_Wayne">
+                <div>
+                  <img src="https://via.placeholder.com/50"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    Alex Wayne
+                    <i class="fas fa-mobile-alt"></i>
+                    </br>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+            </div>
 
+            <div class="content-more">
+              <p>Show 10 more</p>
+              <i class="fas fa-sort-down"></i>
+            </div>
+          </div>
+        </section>
+
+        <section class="chat">
+          <div class="chat-header">
+            <div class="chat-user">
+              <img src="https://via.placeholder.com/50"/>
+              <p>Alex Wayne</p>
+              <div class="chat-online-indicator"></div>
+            </div>          
+            <div class="chat-icons">
+              <i class="fas fa-cog"></i>
+              <i class="far fa-window-maximize"></i>
+              <i class="fas fa-times"></i>
+            </div>            
+          </div>
+          <div class="chat-messages">
+            <div class="Alex_message">
+              <p class="chat-message first-message">
+                Hi!
+              </p>
+              <span>Sat, Aug 23, 1:01 PM</span>
+            </div>
+            <div class="Alex_message">
+              <p class="chat-message second-message">
+                How are u?
+              </p>
+              <span>Sat, Aug 23, 1:01 PM</span>
+            </div>
+              Etiam sagittis sem sed lacus laoreet, eu fermentum eros auctor.
+              Proin at nulla elementum, consectetur ex eget, commodo ante. 
+              Sed eros mi, bibendum ut dignissim et, maximus eget nibh. Phasellus
+              blandit quam turpis, at mollis velit pretium ut. Nunc consequat
+              efficitur ultrices. Nullam hendrerit posuere est. Nulla libero
+              sapien, egestas ac felis porta, cursus ultricies quam. Vestibulum
+              tincidunt accumsan sapien, a fringilla dui semper in. Vivamus
+              consectetur ipsum a ornare blandit. Aenean tempus at lorem sit
+              amet faucibus. Curabitur nibh justo, faucibus sed velit cursus,
+              mattis cursus dolor. Pellentesque id pretium est. Quisque
+              convallis nisi a diam malesuada mollis. Aliquam at enim ligula.
+          </div>
+          <div class="chat-input">
+
+          </div>
         </section>
 
       </article>
 
       <article class="dialogues">
-        <section class="friends">
-    
-        </section>
-        
+        <div class="dialogues-chat-list">    
+        </div> 
+        <div class="dialogues-messages">    
+        </div>    
       </article>    
 
     </main>

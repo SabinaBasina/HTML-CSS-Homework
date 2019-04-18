@@ -6,41 +6,37 @@ body{
   background-color: #e9e8e4;
 }
 
-.menu,
-.main-information,
-.more-information,
-.dialogues {
-  margin: 50px auto;
+.block {
+  margin: 0 auto;
   width: 70%;
 }
 
-.menu div,
-.main-information section,
+.header,
+.main-information,
 .more-information section,
-.dialogues section {
-  height: 100%;
-  width: 100%;   
+.dialogues {     
   background-color: white;
-  margin: 2%;
   border-radius: 8px; 
+  margin-top: 3%;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: nowrap;
+.more-information section {
+  width: 365px;
+  height: 600px;
+}
+
+.header {
   height: 150px;
 }
 
 .main-information {
-  display: flex;
-  flex-wrap: nowrap;
   height: 200px;
 }
 
 .more-information {  
   display: flex;
-  flex-wrap: nowrap;
-  height: 600px;
+  justify-content: space-between;  
+  flex-wrap: wrap;  
 }
 
 .dialogues {
@@ -49,21 +45,14 @@ body{
   height: 800px;
 }
 
-@media only screen and (max-width: 1500px) {
-  .menu,
-  .main-information,
-  .more-information,
-  .dialogues {
+@media only screen and (max-width: 1600px) {
+  .block {
     width: 90%;
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .menu,
-  .main-information,
-  .more-information,
-  .dialogues {
+@media only screen and (max-width: 1300px) {
+  .block {
     width: 100%;
   }
-
 }

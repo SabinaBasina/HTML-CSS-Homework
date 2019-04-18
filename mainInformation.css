@@ -5,11 +5,13 @@
   float: left;
 }
 
-.user_avatar {
-  background-color: #bbc4d1;
+.user_avatar img {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
+  border-radius: 50px;  
+}
+
+.user_avatar {
   margin-left: 6%;
 }
 
@@ -23,6 +25,10 @@
   font-weight: 600;
   line-height: 0px;
   margin-bottom: -5px;
+}
+
+.fa-check-circle {
+  font-size: 15px;
 }
 
 .user-information{

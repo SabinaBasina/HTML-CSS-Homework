@@ -1,22 +1,22 @@
-.news-header {
+.news-header, .people-to-follow-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5px 7% 0 7%;
 }
 
-.news p {
+.activity-feed p {
   font-size: 14px;
   color: #727272;
   font-weight: 400;
 }
 
-.news span {
+.activity-feed span {
   color: #4d75a3;
   font-weight: 400;
 }
 
-h2 {
+.news-header h2, .people-to-follow-header h2 {
   font-weight: 100;
   color: #000000;
 }
@@ -28,9 +28,9 @@ h2 {
 .shared-a-link {
   margin-left: 19%;
   margin-right: 7%;  
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
-
+ 
 .fa-cog,
 .fa-image,
 .fa-thumbs-up,
@@ -47,16 +47,18 @@ h2 {
   display: flex;  
 }
 
-.photo {
+.photo img {
   width: 50px;
   height: 50px;
-  border-radius: 4px;
-  background-color: #bbc4d1;
-  float: left;  
+  border-radius: 4px;   
+}
+
+.photo {
+  float: left; 
   margin-right: 2%;
 }
 
-.news-content-more {
+.content-more {
   width: 100%;
   height: 51px;
   background-color: #ebf4fa;
@@ -67,20 +69,18 @@ h2 {
   border-bottom-left-radius: 8px;
 }
 
-.news-content-more p {
+.content-more p {
   text-transform: uppercase; 
   color: #4d75a3;
   margin-right: 2%;
 }
 
-.news-content-more i {
+.content-more i {
   color: #4d75a3;
   margin-bottom: 6px;
 }
 
-.news {
-  width: 100%;
-  height: 100%;
+.activity-feed, .people-to-follow {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,19 +93,19 @@ h2 {
 }
 
 .added-photos .line {
-  margin-left: -37px; 
-  margin-top: -70px;    
+  margin-left: -35px; 
+  margin-top: -75px;    
   height: 90px;
 } 
 
 .liked-photos .line {
-  margin-left: -37px; 
-  margin-top: -50px; 
+  margin-left: -35px; 
+  margin-top: -58px; 
   height: 70px;
 }
 
 .news-content-adds .line, .news-content-events .line {
-  margin-left: 37px; 
+  margin-left: 34px; 
   margin-top: -27px; 
   height: 20px;
 }
@@ -121,4 +121,161 @@ h2 {
   background-color: #4d75a3;
   margin-top: -62px; 
   margin-right: 50px;
+}
+
+.add-peoples {
+  margin: 0 7% 0 7%;
+}
+
+.add {
+  margin-bottom: 27px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add div {
+  display: flex;
+  align-items: center;
+}
+
+.online-indicator {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 36px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #00d905;
+  border: 3px solid #ffffff;
+}
+
+.add img {
+  border-radius: 25px;
+}
+
+.add img,
+.add p {
+  float: left; 
+}
+
+.add p {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #3f4f5f;
+  font-weight: 600;
+}
+
+.add p span, .fa-mobile-alt {
+  font-size: 14px;
+  color: #97a4b1;
+  font-weight: 400;
+}
+
+.add button {
+  font-size: 12px;
+  line-height: 24px;
+  color: #97a4b1;
+  font-weight: 600;
+  width: 50px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #97a4b1;
+}
+
+.chat-header {
+  width: 100%;
+  height: 50px;
+  background-color: #4d75a3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-user {
+  display: flex;
+  align-items: center;
+}
+
+.chat-user img {
+  margin-left: 25px;
+  width: 33px;
+  height: 32px;
+  border-radius: 16px;
+  float: left;
+}
+
+.chat-user p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 10px;
+  float: left;
+}
+
+.chat-online-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-left: 8px;
+  float: left;
+}
+
+.chat-icons > i {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #d6d6d6;
+}
+
+.chat-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.chat-messages {
+  display: block;
+  overflow: auto;
+  width: 360px;
+  height: 300px;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 5px;
+  height: 69px;
+  border-radius: 2px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #a5a5a5;
+  border-radius: 10px; 
+}
+
+.Alex_message {
+  margin-left: 25px;
+}
+
+.chat-message {   
+  background-color: #f2f4f6;
+  display: flex;
+  align-items: center;
+  border-radius: 20px; 
+  text-indent: 15px;
+  margin-bottom: 0px;
+  width: 60px;
+  height: 35px;
+}
+
+
+
+.Alex_message span{  
+  font-size: 9px;
+  color: #b1b1b1;
+  font-weight: 400;
 }
