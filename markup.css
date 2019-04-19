@@ -20,6 +20,10 @@ body{
   margin-top: 3%;
 }
 
+.dialogues { 
+  margin-bottom: 5%;
+}
+
 .more-information section {
   width: 365px;
   height: 600px;
