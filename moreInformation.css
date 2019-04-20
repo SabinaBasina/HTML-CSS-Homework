@@ -240,7 +240,6 @@
 }
 
 .chat-messages {
-  display: block;
   overflow: auto;
   width: 360px;
   height: 500px;
@@ -248,13 +247,15 @@
   flex-direction: column;
 }
 
-.chat-messages::-webkit-scrollbar {
+.chat-messages::-webkit-scrollbar,
+.dialogues-messages-content::-webkit-scrollbar {
   width: 5px;
   height: 69px;
   border-radius: 2px;
 }
 
-.chat-messages::-webkit-scrollbar-thumb {
+.chat-messages::-webkit-scrollbar-thumb,
+.dialogues-messages-content::-webkit-scrollbar-thumb {
   background: #a5a5a5;
   border-radius: 10px; 
 }
@@ -289,28 +290,29 @@
   border-radius: 20px; 
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin-bottom: 7px;
-  height: 35px;
-  margin-top: 15px;    
+  margin-top: 10px;    
 	position: relative;
 }
 
-.Alex .chat-message:before {
+.Alex .chat-message::before {
 	border: 10px solid transparent;
 	border-bottom-color: #f2f4f6;
   -webkit-transform: rotate(-5deg);
 	position: absolute;
-  top: 12px;
+  top: 8px;
   left: -9px;
 	content:'';
 }
 
-.John .chat-message:before {
+.John .chat-message::before {
 	border: 10px solid transparent;
 	border-bottom-color: #ebf4fa;
   -webkit-transform: rotate(365deg);
 	position: absolute;
-  top: 12px;
+  top: 8px;
   right: -9px;
 	content:'';
 }
@@ -323,10 +325,11 @@
   background-color: #ebf4fa;
 }
 
-.message span {  
+.chat-messages-time {  
   font-size: 9px;
   color: #b1b1b1;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .chat-messages-date {
