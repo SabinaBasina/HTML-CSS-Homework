@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="markup.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <link href="mainInformation.css" rel="stylesheet">
     <link href="moreInformation.css" rel="stylesheet">
     <link href="dialogues.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="screen.css" rel="stylesheet">    
     <title>Social UI</title>
   </head>
   <body>
@@ -16,8 +17,8 @@
       <div class="top-bar">          
         <div class="left-part">                
           <a href="#" class="header-name">social ui</a>
-          <nav>      
-            <ul class="left-icons">
+          <nav class="left-icons">      
+            <ul>
               <li>
                 <a href="#">
                   <i class="fas fa-bell"></i>
@@ -32,8 +33,8 @@
         <nav class="right-icons"> 
           <ul>
             <li>
-              <a href="#" class="user-name">
-                John Doe
+              <a href="#">
+                <span class="user-name">John Doe</span>
                 <i class="far fa-user-circle"></i>
                 <i class="fas fa-sort-down"></i>
               </a>
@@ -59,51 +60,50 @@
     <main class="block">
 
       <article class="main-information">
-          <div class="about-user main">
-            <div class="user_avatar">
-              <img src="https://via.placeholder.com/100" alt="placeholder"/>
-            </div>
-            <div class="user_status">
-              <p class="user_name">
-                John Doe
-                <i class="fas fa-check-circle"></i>
-              </p>
-              <p class="user-information">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed aliqua.
-              </p>
-            </div>  
-            <div class="sep">
-            </div>          
+        <div class="about-user main">
+          <div class="user_avatar">
+            <img src="https://via.placeholder.com/100" alt="placeholder"/>
           </div>
+          <div class="user_status">
+            <p class="user_name">
+              John Doe
+              <i class="fas fa-check-circle"></i>
+            </p>
+            <p class="user-information">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed aliqua.
+            </p>
+          </div>  
+          <div class="sep"></div>          
+        </div>
 
-          <div class="about-user more">
-            <div class="stats">
-              <div class="user-followers">
-                <p>1121</p>
-                <p class="name">Followers</p>
-              </div>
-              <div class="user-following">
-                <p>5,356</p>
-                <p class="name">Following</p>
-              </div>
-              <div class="user-photos">
-                <p>502</p>
-                <p class="name">Photos</p>
-              </div>
-              <div class="user-videos">
-                <p>789</p>
-                <p class="name">Videos</p>
-              </div>                
+        <div class="about-user more">
+          <div class="stats">
+            <div class="user-followers">
+              <p>1121</p>
+              <p class="name">Followers</p>
             </div>
-            <div class="buttons">
-              <button class="button send-message">
-                Send Message
-              </button>
-              <button class="button add-friend">
-                Add Friend
-              </button>
-            </div>            
+            <div class="user-following">
+              <p>5,356</p>
+              <p class="name">Following</p>
+            </div>
+            <div class="user-photos">
+              <p>502</p>
+              <p class="name">Photos</p>
+            </div>
+            <div class="user-videos">
+              <p>789</p>
+              <p class="name">Videos</p>
+            </div>                
           </div>
+          <div class="buttons">
+            <button class="button send-message">
+              Send Message
+            </button>
+            <button class="button add-friend">
+              Add Friend
+            </button>
+          </div>            
+        </div>
       </article>
 
       <article class="more-information">
@@ -417,9 +417,7 @@
             <div class="dialogues-chats-list-peoples-message new-message">
               <img src="https://via.placeholder.com/50" alt="placeholder"/>
               <div class="dialogues-chats-list-peoples-online-indicator"></div>
-              <div class="dialogues-chats-list-peoples-message_count">
-                <p>1</p>
-              </div>
+              <div class="dialogues-chats-list-peoples-message_count"></div>
               <div class="dialogues-chats-list-peoples-message-wrapper">
                 <p class="dialogues-chats-list-peoples-message-content">
                   <span class="dialogues-chats-list-peoples-message-name">
@@ -478,9 +476,7 @@
             <div class="dialogues-chats-list-peoples-message new-message">
               <img src="https://via.placeholder.com/50" alt="placeholder"/>
               <div class="dialogues-chats-list-peoples-online-indicator"></div>
-              <div class="dialogues-chats-list-peoples-message_count">
-                <p>3</p>
-              </div>
+              <div class="dialogues-chats-list-peoples-message_count"></div>
               <div class="dialogues-chats-list-peoples-message-wrapper">
                 <p class="dialogues-chats-list-peoples-message-content">
                   <span class="dialogues-chats-list-peoples-message-name">
