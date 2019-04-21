@@ -42,7 +42,7 @@
   list-style: none;
   margin-left: 58px;
 }
-
+ 
 .left-part {
   display: flex;
   align-items: center;
@@ -125,4 +125,4 @@
 .top-header li:first-child {
   border-bottom: 3px #4d75a3 solid;
   line-height: 74px;
-}  
+}   
