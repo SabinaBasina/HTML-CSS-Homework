@@ -9,7 +9,7 @@
   }
 
   .dialogues-chats-list {
-    width: 450px;
+    width: 62%;
     height: 800px;
     background-color: white;
     border-radius: 8px;    
@@ -119,3 +119,9 @@
     height: 200px;
   }
 } 
+
+@media only screen and (max-width: 600px) {
+  .dialogues-chats-list {
+    width: 90%; 
+  }
+}
