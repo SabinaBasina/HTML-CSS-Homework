@@ -3,6 +3,7 @@
   width: 450px;
   height: 100%;
   border-right: 1px solid #e5e5e5;  
+  pointer-events: none;
 }
 
 .dialogues-messages {
@@ -58,7 +59,15 @@
   width: 70px;
   display: flex;
   justify-content: space-between;
-  color: #a6bad1;
+  color: #a6bad1;  
+}
+
+.dialogues-chats-list-header-icons > *, 
+.dialogues-messages-header-icons > *,
+.fa-smile,
+.dialogues-messages-input-add-file {
+  cursor: pointer;
+  pointer-events: auto;  
 }
 
 .dialogues-chats-list-peoples-message {
@@ -263,6 +272,7 @@
   font-size: 14px;
   color: #2b587a;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .dialogues-messages-input-add-file .fa-sort-down {
@@ -278,5 +288,6 @@
   font-size: 16px;
   color: #ffffff;
   font-weight: 600;
+  cursor: pointer;
   outline: none;
 }

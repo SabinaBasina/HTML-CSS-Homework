@@ -31,6 +31,10 @@
   margin-bottom: 33px;
 }
 
+.news-header .fa-cog {
+  cursor: pointer;
+}
+
 .news-header .fa-cog,
 .news-content-photos .fa-image,
 .news-content-likes .fa-thumbs-up,
@@ -67,6 +71,11 @@
   justify-content: center;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
+  cursor: pointer;
+}
+
+.content-more:hover {
+  background-color: #e0ecf5;
 }
 
 .content-more p {
@@ -93,19 +102,19 @@
 }
 
 .added-photos .line {
-  margin-left: -35px; 
+  margin-left: -40px; 
   margin-top: -75px;    
   height: 90px;
 } 
 
 .liked-photos .line {
-  margin-left: -35px; 
+  margin-left: -40px; 
   margin-top: -58px; 
   height: 70px;
 }
 
 .news-content-adds .line, .news-content-events .line {
-  margin-left: 34px; 
+  margin-left: 37px; 
   margin-top: -27px; 
   height: 20px;
 }
@@ -171,7 +180,6 @@
 .add p span, .fa-mobile-alt {
   font-size: 14px;
   color: #97a4b1;
-  font-weight: 400;
 }
 
 .add button {
@@ -184,6 +192,8 @@
   border-radius: 4px;
   background-color: #ffffff;
   border: 1px solid #97a4b1;
+  cursor: pointer;
+  outline: none;
 }
 
 .chat-header {
@@ -227,10 +237,11 @@
   float: left;
 }
 
-.chat-icons > i {
+.chat-icons > * {
   font-size: 12px;
   margin-left: 10px;
   color: #d6d6d6;
+  cursor: pointer;
 }
 
 .chat-icons {
@@ -368,7 +379,7 @@
 
 .chat-input input {
   width: 290px;
-  height: 48px;
+  height: 46px;
   font-size: 18px;
   color: #667a90;
   border-bottom-left-radius: 8px;
@@ -383,6 +394,7 @@
   position: absolute;
   color: #a6bad1;
   font-size: 23px;
+  cursor: pointer;
 }
 
 .chat-input .fa-smile {

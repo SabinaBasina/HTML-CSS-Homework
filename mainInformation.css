@@ -98,6 +98,8 @@
   width: 185px;
   font-weight: 600;  
   margin: 10px;
+  cursor: pointer;
+  outline: none;
 }
 
 .send-message {
@@ -107,10 +109,20 @@
   color: #ffffff;
 }
 
+.send-message:hover,
+.dialogues-messages-input-wrapper button:hover {  
+  background-color: #365e8a;
+}
+
 .add-friend {  
   height: 48px;
   color: #4d75a3;
   height: 48px;
   background-color: #ffffff;
   border: 2px solid #4d75a3;
+}
+
+.add-friend:hover,
+.add button:hover {  
+  background-color: #ebf4fa;
 }
