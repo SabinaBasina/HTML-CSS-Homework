@@ -106,10 +106,6 @@
   width: 100%;
 }
 
-.dialogues-chats-list-peoples-online-indicator {
-  position: relative;
-}
-
 .dialogues-chats-list-peoples-online-indicator::after {
   position: absolute;
   background-color: #00d905;
@@ -119,7 +115,7 @@
   width: 8px;  
   border-radius: 50%;
   margin-top: -23px;
-  margin-left: -22px;
+  margin-left: -6%;
 }
 
 .dialogues-chats-list-peoples-message_count::after {
@@ -137,23 +133,7 @@
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-
-  /* width: 24px;
-  height: 24px;
-  border-radius: 2px;
-  background-color: #4d75a3;
-
-  margin-top: 15px; */
 }
-
-/* .dialogues-chats-list-peoples-message_count p {
-  font-size: 12px;
-  line-height: 16px;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 20%;
-} */
 
 .new-message {
   background-color: #ebf4fa;

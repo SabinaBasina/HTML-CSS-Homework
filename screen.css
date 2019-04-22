@@ -8,12 +8,28 @@
     background-color: #e9e8e4;
   }
 
-  .dialogues-chats-list, .dialogues-messages {
+  .dialogues-chats-list {
+    width: 450px;
+    height: 800px;
+    background-color: white;
+    border-radius: 8px;    
+  }
+
+  .dialogues-messages {
     width: 100%;
     height: 800px;
     background-color: white;
     border-radius: 8px;
-    border-top-right-radius: 8px;
+  }
+
+  .dialogues-chats-list-peoples {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dialogues-chats-list-peoples-message {
+    width: 100%;
   }
 
   .dialogues-messages-header {
