@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="markup.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="mainInformation.css" rel="stylesheet">
+    <link href="moreInformation.css" rel="stylesheet">
+    <link href="dialogues.css" rel="stylesheet">
+    <link href="screen.css" rel="stylesheet">    
+    <title>Social UI</title>
+  </head>
+  <body>
+    <header class="header block">
+      <div class="top-bar">          
+        <div class="left-part">                
+          <a href="#" class="header-name">social ui</a>
+          <nav class="left-icons">      
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fas fa-bell"></i>
+                  <div class="notification">1</div>
+                </a>
+              </li>
+              <li><a href="#"><i class="fas fa-user-friends"></i></a></li>
+              <li><a href="#"><i class="fas fa-comment"></i></a></li>
+            </ul>
+          </nav>    
+        </div>
+        <nav class="right-icons"> 
+          <ul>
+            <li>
+              <a href="#">
+                <span class="user-name">John Doe</span>
+                <i class="far fa-user-circle"></i>
+                <i class="fas fa-sort-down"></i>
+              </a>
+            </li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+          </ul>    
+        </nav>        
+      </div>  
+      <div class="secondary-bar">    
+        <nav>
+          <ul class="top-header">
+            <li><a href="#">Dialogues</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Communities</a></li>
+          </ul>
+        </nav>     
+      </div> 
+    </header>
+
+    <main class="block">
+
+      <article class="main-information">
+        <div class="about-user main">
+          <div class="user_avatar">
+            <img src="https://via.placeholder.com/100" alt="placeholder"/>
+          </div>
+          <div class="user_status">
+            <p class="user_name">
+              John Doe
+              <i class="fas fa-check-circle"></i>
+            </p>
+            <p class="user-information">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed aliqua.
+            </p>
+          </div>  
+          <div class="sep"></div>          
+        </div>
+
+        <div class="about-user more">
+          <div class="stats">
+            <div class="user-followers">
+              <p>1121</p>
+              <p class="name">Followers</p>
+            </div>
+            <div class="user-following">
+              <p>5,356</p>
+              <p class="name">Following</p>
+            </div>
+            <div class="user-photos">
+              <p>502</p>
+              <p class="name">Photos</p>
+            </div>
+            <div class="user-videos">
+              <p>789</p>
+              <p class="name">Videos</p>
+            </div>                
+          </div>
+          <div class="buttons">
+            <button class="button send-message">
+              Send Message
+            </button>
+            <button class="button add-friend">
+              Add Friend
+            </button>
+          </div>            
+        </div>
+      </article>
+
+      <article class="more-information">
+        
+        <section class="activity-feed">
+          <div class="news-header">
+            <h2>Activity Feed</h2>
+            <i class="fas fa-cog"></i>
+          </div>
+
+          <div class="news-content">
+            <div class="news-content-photos">
+              <i class="fas fa-image"></i>
+              <div class="added-photos">
+                <p>
+                  <span>Kevin Ertan</span>
+                  <br/>
+                  Added 4 photos to album <span>Summer</span>
+                </p>
+                <div class="photos">
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>
+                </div>
+                <div class="line">
+                </div>
+              </div>             
+            </div>
+
+            <div class="news-content-likes">
+              <i class="fas fa-thumbs-up"></i>
+              <div class="liked-photos">
+                <p>
+                  <span>John Doe</span>
+                  liked 2 photos of <span>Alex Wayne</span>
+                </p>
+                <div class="photos">
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>                  
+                </div>
+                <div class="line"></div>
+              </div>
+            </div>
+
+            <div class="news-content-adds">
+              <i class="fas fa-users"></i>
+              <p class="added-to-friends">
+                <span>John Doe</span>
+                added <span>Alex Wayne</span> to friends
+              </p>
+              <div class="line">
+              </div>
+            </div>
+
+            <div class="news-content-events">
+              <i class="far fa-calendar"></i>
+              <p class="created-event">
+                <span>Alex Gilev</span>
+                created the <span>Bowling</span> event
+              </p>
+              <div class="line"></div>
+            </div>
+
+            <div class="news-content-links">
+              <i class="fas fa-bullhorn"></i>
+              <div class="shared-a-link">
+                <p>
+                  <span>David Vane</span>
+                  shared a link:
+                </p>
+                <div class="link">
+                  <div class="photo">
+                    <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  </div>
+                  <p>
+                    <span>Lorem ipsum dolor</span>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing ips...
+                  </p>                  
+                </div>
+                <div class="link-line"></div>
+              </div> 
+            </div>
+
+            <div class="content-more">
+              <p>Show earlier activity</p>
+              <i class="fas fa-sort-down"></i>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="people-to-follow">        
+          <div class="people-to-follow-header">
+            <h2>People to Follow</h2>
+          </div>
+
+          <div class="people-to-follow-content">
+            <div class="add-peoples">
+              <div class="add Alex_Wayne">
+                <div>
+                  <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    Alex Wayne
+                    <i class="fas fa-mobile-alt"></i>
+                    <br/>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add David_Vane">
+                <div>
+                  <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    David Vane
+                    <br/>
+                    <span>Out of town</span>
+                  </p>
+                </div>               
+                <button>+ Add</button>
+              </div>
+              <div class="add Kevin_Ertan">
+                <div>
+                  <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <p>
+                    Kevin Ertan
+                    <br/>
+                    <span>Don't sleep</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add Jane_Doe">
+                <div>
+                  <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    Jane Doe
+                    <i class="fas fa-mobile-alt"></i>
+                    <br/>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add Alexander_Wilk">
+                <div>
+                  <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <p>
+                    Alexander Wilk...
+                    <br/>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+              <div class="add Alex_Wayne">
+                <div>
+                  <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <div class="online-indicator"></div>
+                  <p>
+                    Alex Wayne
+                    <i class="fas fa-mobile-alt"></i>
+                    <br/>
+                    <span>Artist</span>
+                  </p>
+                </div>              
+                <button>+ Add</button>
+              </div>
+            </div>
+
+            <div class="content-more">
+              <p>Show 10 more</p>
+              <i class="fas fa-sort-down"></i>
+            </div>
+          </div>
+        </section>
+
+        <section class="chat">
+          <div class="chat-header">
+            <div class="chat-user">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <p>Alex Wayne</p>
+              <div class="chat-online-indicator"></div>
+            </div>          
+            <div class="chat-icons">
+              <i class="fas fa-cog"></i>
+              <i class="far fa-window-maximize"></i>
+              <i class="fas fa-times"></i>
+            </div>            
+          </div>
+          <div class="chat-messages">
+            <div class="Alex message">
+              <p class="chat-message">
+                Hi!
+              </p>
+              <span class="chat-messages-time">
+                Sat, Aug 23, 1:01 PM
+              </span>
+            </div>
+            <div class = "John message">
+              <p class="chat-message">
+                Hi
+              </p>
+              <span class="chat-messages-time">
+                Sat, Aug 23, 1:02 PM
+              </span>
+            </div>
+            <div class="Alex message">
+              <p class="chat-message">
+                How are u?
+              </p>
+              <span class="chat-messages-time">
+                Sat, Aug 23, 1:03 PM
+              </span>
+            </div>
+            <div class = "John message">
+              <p class="chat-message">
+                Great, and you?
+              </p>
+              <span class="chat-messages-time">
+                Sat, Aug 23, 1:05 PM
+              </span>
+            </div>            
+            <div class="Alex message">
+              <p class="chat-message">
+                Me too. What are you doing today?
+              </p>
+              <span class="chat-messages-time">
+                Sat, Aug 23, 1:06 PM
+              </span>
+            </div>
+            <div class = "John message">
+              <p class="chat-message">
+                Well, I’m thinking what to do.
+              </p>
+              <span class="chat-messages-time">
+                Sat, Aug 23, 1:07 PM
+              </span>
+            </div>
+            <div class="chat-messages-date">Sunday, August 24</div>
+            <div class="Alex message">              
+              <p class="chat-message">
+                What about going to the new car exhibition?              
+              </p>              
+              <span class="chat-messages-time">
+                5 minutes ago
+              </span>
+            </div>
+            <div class = "John message">
+              <p class="chat-message">
+                Ok, when does it open?
+              </p>
+              <span class="chat-messages-time">
+                4 minutes ago
+              </span>
+            </div>
+            <div class="Alex message">
+              <p class="chat-message">
+                At seven o’clock.
+              </p>
+              <span class="chat-messages-time">
+                3 minutes ago
+              </span>
+            </div>
+            <div class = "John message">
+              <p class="chat-message">
+                Ok.
+              </p>
+              <span class="chat-messages-time">
+                2 minutes ago
+              </span>
+            </div>
+            </div>
+          <div class="chat-input">
+            <i class="far fa-smile"></i>
+            <input type="text">
+            <i class="fas fa-paperclip"></i>
+          </div>
+        </section>
+
+      </article>
+
+      <article class="dialogues">
+        <div class="dialogues-chats-list">   
+          <div class="dialogues-chats-list-header">
+            <p class="dialogues-chats-list-header-name">Dialogues (2)</p>
+            <div class="dialogues-chats-list-header-icons">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-volume-mute"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>           
+          </div> 
+          <div class="dialogues-chats-list-peoples">
+            <div class="dialogues-chats-list-peoples-message new-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-online-indicator"></div>
+              <div class="dialogues-chats-list-peoples-message_count"></div>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    Alex Wayne
+                  </span>  
+                  <span class="dialogues-chats-list-peoples-message-time">1:55 PM</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Lorem ipsum dolor
+                </p>
+              </div>
+            </div>
+            <div class="dialogues-chats-list-peoples-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    David Vane
+                  </span>
+                  <span class="dialogues-chats-list-peoples-message-time">11:39 PM</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Vestibulum ac diam sit met...
+                </p>
+              </div>
+            </div>
+            <div class="dialogues-chats-list-peoples-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    Nancy Dilan 
+                  </span>
+                  <span class="dialogues-chats-list-peoples-message-time">0:28 AM</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Quam vehicula.
+                </p>
+              </div>
+            </div>
+            <div class="dialogues-chats-list-peoples-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-online-indicator"></div>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    Norman Kenney
+                  </span>  
+                  <span class="dialogues-chats-list-peoples-message-time">Jul 19</span>
+                </p>    
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Nulla quis lorem ut libero...
+                </p>         
+              </div>              
+            </div>
+            <div class="dialogues-chats-list-peoples-message new-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-online-indicator"></div>
+              <div class="dialogues-chats-list-peoples-message_count"></div>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    James Dilian
+                  </span>
+                  <span class="dialogues-chats-list-peoples-message-time">Jul 19</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Vivamus magna justo!
+                </p>
+              </div>
+            </div>
+            <div class="dialogues-chats-list-peoples-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    Mike Dorn
+                  </span>
+                  <span class="dialogues-chats-list-peoples-message-time">Jul 2</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text forward-message">
+                  <img class="dialogues-chats-list-peoples-message-text-forward"
+                    src="https://via.placeholder.com/50" alt="placeholder"/>
+                  <span>Praesent sapien massa.</span>
+                </p>
+              </div>
+            </div>
+            <div class="dialogues-chats-list-peoples-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    Patrick Morison
+                  </span> 
+                  <span class="dialogues-chats-list-peoples-message-time">Jul 30,12</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Convallis a pellentesque...
+                </p>
+              </div>
+            </div>
+            <div class="dialogues-chats-list-peoples-message">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <div class="dialogues-chats-list-peoples-message-wrapper">
+                <p class="dialogues-chats-list-peoples-message-content">
+                  <span class="dialogues-chats-list-peoples-message-name">
+                    Anna Doe
+                  </span> 
+                  <span class="dialogues-chats-list-peoples-message-time">Jul 29,11</span>
+                </p>
+                <p class="dialogues-chats-list-peoples-message-text">
+                  Convallis a pellentesque...
+                </p>
+            </div>
+            </div>
+          </div> 
+        </div> 
+        <div class="dialogues-messages">
+          <div class="dialogues-messages-header">
+            <div class="dialogues-messages-header-wrapper">
+              <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              <p>
+                <span class="dialogues-messages-header-name">
+                  Alex Wayne
+                </span>
+                <br/>
+                <span class="dialogues-messages-header-status">
+                  <i class="fas fa-mobile-alt"></i>
+                  Online
+                </span>
+              </p>
+            </div>
+            <div class="dialogues-messages-header-icons">
+              <i class="fas fa-user-plus"></i>
+              <i class="fas fa-cog"></i>
+              <i class="fas fa-times"></i>
+            </div>           
+          </div> 
+          <div class="dialogues-messages-content">
+            <div class="Alex message">
+              <div class="message-content from-Alex">
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                <p class="chat-message">
+                  Hi!
+                </p>
+              </div>              
+              <span class="dialogues-messages-content-time">
+                Sat, Aug 23, 1:01 PM
+              </span>
+            </div>
+            <div class = "John message">
+              <div class="message-content from-John">                
+                <p class="chat-message">
+                  Hi
+                </p>
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              </div>
+              <span class="dialogues-messages-content-time">
+                Sat, Aug 23, 1:02 PM
+              </span>
+            </div>
+            <div class="Alex message">
+              <div class="message-content from-Alex">
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                <p class="chat-message">
+                  How are u?
+                </p>
+              </div>
+              <span class="dialogues-messages-content-time">
+                Sat, Aug 23, 1:03 PM
+              </span>
+            </div>
+            <div class = "John message">
+              <div class="message-content from-John">               
+                <p class="chat-message">
+                  Great, and you?
+                </p> 
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              </div>
+              <span class="dialogues-messages-content-time">
+                Sat, Aug 23, 1:05 PM
+              </span>
+            </div>            
+            <div class="Alex message">
+              <div class="message-content from-Alex"> 
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>
+                <p class="chat-message">
+                  Me too. What are you doing today?
+                </p>
+              </div>
+              <span class="dialogues-messages-content-time">
+                Sat, Aug 23, 1:06 PM
+              </span>
+            </div>
+            <div class = "John message">
+              <div class="message-content from-John"> 
+                <p class="chat-message">
+                  Well, I’m thinking what to do.
+                </p>
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>
+              </div>
+              <span class="dialogues-messages-content-time">
+                Sat, Aug 23, 1:07 PM
+              </span>
+            </div>
+            <div class="chat-messages-date">Sunday, August 24</div>
+            <div class="Alex message">
+              <div class="message-content from-Alex"> 
+                <img src="https://via.placeholder.com/50" alt="placeholder"/>            
+                <p class="chat-message">
+                  What about going to the new car exhibition?              
+                </p>
+              </div>              
+              <span class="dialogues-messages-content-time">
+                5 minutes ago
+              </span>
+            </div>
+            <div class = "John message">
+              <div class="message-content from-John"> 
+                <p class="chat-message">
+                  Ok, when does it open?
+                </p>
+                <img src="https://via.placeholder.com/50" alt="placeholder"/> 
+              </div>
+              <span class="dialogues-messages-content-time">
+                4 minutes ago
+              </span>
+            </div>
+            <div class="Alex message">
+              <div class="message-content from-Alex">
+                <img src="https://via.placeholder.com/50" alt="placeholder"/> 
+                <p class="chat-message">
+                  At seven o’clock.
+                </p>
+              </div>
+              <span class="dialogues-messages-content-time">
+                3 minutes ago
+              </span>
+            </div>
+            <div class = "John message">
+              <div class="message-content from-John"> 
+                <p class="chat-message">
+                  Ok.
+                </p>
+                <img src="https://via.placeholder.com/50" alt="placeholder"/> 
+              </div>
+              <span class="dialogues-messages-content-time">
+                2 minutes ago
+              </span>
+            </div>
+            <div class="Alex message">
+              <div class="message-content from-Alex">
+                <img src="https://via.placeholder.com/50" alt="placeholder"/> 
+                <p class="chat-message">
+                  ...<i class="fas fa-pen"></i>
+                </p>
+              </div>
+              <span class="dialogues-messages-content-time">
+                Typing...
+              </span>
+            </div>
+          </div>
+          <div class="dialogues-messages-input">            
+            <form class="dialogues-messages-input-wrapper">
+              <div class="dialogues-messages-input-content">
+                <input type="text">
+                <div class="dialogues-messages-input-add">
+                  <i class="far fa-smile"></i>
+                  <p class="dialogues-messages-input-add-file">
+                    Attach
+                    <i class="fas fa-sort-down"></i>
+                  </p>
+                </div>                
+              </div>              
+              <button>Send</button>
+            </form>
+          </div>
+        </div>    
+      </article>    
+
+    </main>
+    
+  </body>
+</html>
