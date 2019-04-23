@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 7% 0 7%;
+  margin: 28px 7% 0 7%;
 }
 
 .activity-feed p {
@@ -28,7 +28,7 @@
 .shared-a-link {
   margin-left: 19%;
   margin-right: 7%;  
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .news-header .fa-cog {
@@ -49,6 +49,7 @@
 
 .photos {
   display: flex;  
+  margin-top: 10px;
 }
 
 .photo img {
@@ -121,6 +122,7 @@
 
 .link {
   margin-left: 5%;
+  margin-top: 10px;
 }
 
 .link-line {  
@@ -128,7 +130,7 @@
   width: 2px;
   height: 50px;
   background-color: #4d75a3;
-  margin-top: -62px; 
+  margin-top: -48px; 
   margin-right: 50px;
 }
 

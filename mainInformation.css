@@ -24,7 +24,7 @@
   color: #3f4f5f;
   font-weight: 600;
   line-height: 0px;
-  margin-bottom: -5px;
+  margin-bottom: 7px;
 }
 
 .fa-check-circle {
@@ -61,30 +61,23 @@
 }
 
 .stats {  
+  height: 100%; 
   width: 54%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.user-followers,
-.user-following,
-.user-photos,
-.user-videos {
-  float: left;
+.counter__value {
   color: #4d75a3;
-}
-
-.user-followers::first-line,
-.user-following::first-line,
-.user-photos::first-line,
-.user-videos::first-line {
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
-.name {
-  margin-top: -8px;
+.counter__name {
   font-size: 15px;
+  color: #4d75a3;
 }
 
 .buttons {

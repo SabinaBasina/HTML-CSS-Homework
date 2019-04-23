@@ -3,6 +3,10 @@
     height: 360px;
   }
 
+  .header-name {
+    margin-bottom: 15px;
+  }
+
   .dialogues {
     height: 1700px; 
     background-color: #e9e8e4;
@@ -73,7 +77,7 @@
   .left-part, 
   .stats,
   .main {
-    margin: 0;
+    margin: 8px;
   }
 
  .top-bar,
