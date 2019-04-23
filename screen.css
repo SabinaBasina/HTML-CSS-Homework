@@ -94,11 +94,15 @@
     align-items: center;
   }
 
-  .top-header li {
+  .secondary-bar {
+    height: 45%;
+  }
+
+  .top-header-item {
     margin-top: 10px;
   }
 
-  .top-header li:first-child {
+  .top-header-item:first-child {
     line-height: 35px;
   }  
 
