@@ -102,8 +102,8 @@
     margin-top: 10px;
   }
 
-  .top-header-item:first-child {
-    line-height: 35px;
+  .top-header-item_active {
+    line-height: 40px;
   }  
 
   .sep {

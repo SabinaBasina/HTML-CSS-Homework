@@ -114,7 +114,8 @@
   margin: 0 25% 0 25%;
 }
 
-.top-header-item {
+.top-header-item,
+.top-header-item_active {
   list-style: none;
 }
 
@@ -122,15 +123,15 @@
   text-decoration: none; 
 }
 
-.top-header-item:first-child .top-header-link {
+.top-header-item_active .top-header-link {
   color: #4d75a3;
 }
 
-.top-header-item:not(:first-child) .top-header-link {
+.top-header-item .top-header-link {
   color: #667a90;
 }
 
-.top-header-item:first-child {
+.top-header-item_active {
   border-bottom: 3px #4d75a3 solid;
   line-height: 74px;
 }    
