@@ -127,15 +127,18 @@
       <article class="more-information">
         
         <section class="activity-feed">
-          <div class="news-header">
+          <div class="more-information-header">
             <h2>Activity Feed</h2>
             <i class="fas fa-cog"></i>
           </div>
 
-          <div class="news-content">
-            <div class="news-content-photos">
-              <i class="fas fa-image"></i>
-              <div class="added-photos">
+          <ul class="activity-list">
+            <li class="activity-list__item activity-item">
+              <div class="activity-item__sign sign">
+                <i class="fas fa-image"></i>
+                <div class="sign__line"></div>
+              </div>
+              <div class="contant">
                 <p>
                   <span>Kevin Ertan</span>
                   <br/>
@@ -154,15 +157,15 @@
                   <div class="photo">
                     <img src="https://via.placeholder.com/50" alt="placeholder"/>
                   </div>
-                </div>
-                <div class="line">
-                </div>
-              </div>             
-            </div>
-
-            <div class="news-content-likes">
-              <i class="fas fa-thumbs-up"></i>
-              <div class="liked-photos">
+                </div>  
+              </div>
+            </li>
+            <li class="activity-list__item activity-item">
+              <div class="activity-item__sign sign">
+                <i class="fas fa-thumbs-up"></i>
+                <div class="sign__line"></div>
+              </div>
+              <div class="contant">
                 <p>
                   <span>John Doe</span>
                   liked 2 photos of <span>Alex Wayne</span>
@@ -175,37 +178,43 @@
                     <img src="https://via.placeholder.com/50" alt="placeholder"/>
                   </div>                  
                 </div>
-                <div class="line"></div>
               </div>
-            </div>
-
-            <div class="news-content-adds">
-              <i class="fas fa-users"></i>
-              <p class="added-to-friends">
-                <span>John Doe</span>
-                added <span>Alex Wayne</span> to friends
-              </p>
-              <div class="line">
+            </li>
+            <li class="activity-list__item activity-item">
+              <div class="activity-item__sign sign">
+                <i class="fas fa-user"></i>
+                <div class="sign__line"></div>
               </div>
-            </div>
-
-            <div class="news-content-events">
-              <i class="far fa-calendar"></i>
-              <p class="created-event">
-                <span>Alex Gilev</span>
-                created the <span>Bowling</span> event
-              </p>
-              <div class="line"></div>
-            </div>
-
-            <div class="news-content-links">
-              <i class="fas fa-bullhorn"></i>
-              <div class="shared-a-link">
+              <div class="contant">
+                <p class="added-to-friends">
+                  <span>John Doe</span>
+                  added <span>Alex Wayne</span> to friends
+                </p>
+              </div>
+            </li>
+            <li class="activity-list__item activity-item">
+              <div class="activity-item__sign sign">
+                <i class="far fa-calendar"></i>
+                <div class="sign__line"></div>
+              </div>
+              <div class="contant">
+                <p class="created-event">
+                  <span>Alex Gilev</span>
+                  created the <span>Bowling</span> event
+                </p>
+              </div>
+            </li>
+            <li class="activity-list__item activity-item">
+              <div class="activity-item__sign sign">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <div class="contant">
                 <p>
                   <span>David Vane</span>
                   shared a link:
                 </p>
-                <div class="link">
+                <div class="link-line"></div>
+                <div class="link">                   
                   <div class="photo">
                     <img src="https://via.placeholder.com/50" alt="placeholder"/>
                   </div>
@@ -213,22 +222,19 @@
                     <span>Lorem ipsum dolor</span>
                     <br/>
                     Lorem ipsum dolor sit amet, consectetur adipisicing ips...
-                  </p>                  
-                </div>
-                <div class="link-line"></div>
-              </div> 
-            </div>
-
-            <div class="content-more">
-              <p>Show earlier activity</p>
-              <i class="fas fa-sort-down"></i>
-            </div>
-
+                  </p>                                                  
+                </div>                   
+              </div>
+            </li>
+           </ul>          
+          <div class="content-more">
+            <p>Show earlier activity</p>
+            <i class="fas fa-sort-down"></i>
           </div>
         </section>
 
         <section class="people-to-follow">        
-          <div class="people-to-follow-header">
+          <div class="more-information-header">
             <h2>People to Follow</h2>
           </div>
 

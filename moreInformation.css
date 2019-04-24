@@ -1,4 +1,4 @@
-.news-header, .people-to-follow-header {
+.more-information-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,35 +16,20 @@
   font-weight: 400;
 }
 
-.news-header h2, .people-to-follow-header h2 {
+.more-information h2 {
   font-weight: 100;
   color: #000000;
 }
 
-.added-photos,
-.liked-photos,
-.created-event,
-.added-to-friends,
-.shared-a-link {
-  margin-left: 19%;
-  margin-right: 7%;  
-  margin-bottom: 35px;
-}
-
-.news-header .fa-cog {
+.more-information-header .fa-cog {
   cursor: pointer;
 }
 
-.news-header .fa-cog,
-.news-content-photos .fa-image,
-.news-content-likes .fa-thumbs-up,
-.news-content-events .fa-calendar,
-.news-content-links .fa-bullhorn,
-.news-content-adds .fa-users{  
+.more-information-header .fa-cog,
+.sign i, .fa-bullhorn {  
+  width: 20px;
   color: #9c9c9c;
   font-size: 17px;  
-  float: left;  
-  margin-left: 7%;
 }
 
 .photos {
@@ -96,42 +81,53 @@
   justify-content: space-between;
 }
 
-.line {
-  position: absolute;   
-  background-color: #e5e5e5;
+.activity-list {
+  box-sizing: border-box;
+  width: 90%;
+  padding-left: 30px;
+}
+
+.activity-list__item {
+  margin-bottom: 32px;
+  margin-top: 30px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.activity-item__sign {
+  margin-right: 22px;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.sign__line {
+  flex: 1 0 auto;
   width: 1px;
-}
-
-.added-photos .line {
-  margin-left: -40px; 
-  margin-top: -75px;    
-  height: 90px;
-} 
-
-.liked-photos .line {
-  margin-left: -40px; 
-  margin-top: -58px; 
-  height: 70px;
-}
-
-.news-content-adds .line, .news-content-events .line {
-  margin-left: 37px; 
-  margin-top: -27px; 
-  height: 20px;
+  background-color: #e5e5e5;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
 
 .link {
-  margin-left: 5%;
   margin-top: 10px;
+  margin-left: 18px;
 }
 
 .link-line {  
-  position: relative; 
+  position: absolute; 
   width: 2px;
   height: 50px;
   background-color: #4d75a3;
-  margin-top: -48px; 
-  margin-right: 50px;
+  margin-top: 10px;
+  margin-left: 2px;
 }
 
 .add-peoples {
@@ -167,11 +163,6 @@
   border-radius: 25px;
 }
 
-.add img,
-.add p {
-  float: left; 
-}
-
 .add p {
   margin-left: 20px;
   font-size: 16px;
@@ -182,6 +173,10 @@
 .add p span, .fa-mobile-alt {
   font-size: 14px;
   color: #97a4b1;
+}
+
+.add p span {
+  font-weight: 100;
 }
 
 .add button {
@@ -219,7 +214,6 @@
   width: 33px;
   height: 32px;
   border-radius: 16px;
-  float: left;
 }
 
 .chat-user p {
@@ -227,7 +221,6 @@
   color: #ffffff;
   font-weight: 600;
   margin-left: 10px;
-  float: left;
 }
 
 .chat-online-indicator {
@@ -236,7 +229,6 @@
   border-radius: 4px;
   background-color: #ffffff;
   margin-left: 8px;
-  float: left;
 }
 
 .chat-icons > * {

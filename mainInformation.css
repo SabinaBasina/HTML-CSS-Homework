@@ -15,10 +15,6 @@
   margin-left: 6%;
 }
 
-.user_avatar, .user_status {
-  float: left;
-}
-
 .user_name {
   font-size: 24px;
   color: #3f4f5f;
