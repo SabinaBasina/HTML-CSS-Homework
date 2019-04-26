@@ -295,19 +295,17 @@
   border-radius: 20px; 
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 7px;
   padding-bottom: 7px;
-  margin-bottom: 7px;
-  margin-top: 10px;    
+  padding-top: 7px;
 	position: relative;
 }
 
 .Alex .chat-message::before {
 	border: 10px solid transparent;
 	border-bottom-color: #f2f4f6;
-  -webkit-transform: rotate(-5deg);
-	position: absolute;
-  top: 8px;
+  transform: rotate(-5deg);
+  position: absolute;
+  margin-top: 2px;
   left: -9px;
 	content:'';
 }
@@ -315,9 +313,9 @@
 .John .chat-message::before {
 	border: 10px solid transparent;
 	border-bottom-color: #ebf4fa;
-  -webkit-transform: rotate(365deg);
-	position: absolute;
-  top: 8px;
+  transform: rotate(365deg);
+  position: absolute;
+  margin-top: 2px;
   right: -9px;
 	content:'';
 }
@@ -335,18 +333,21 @@
   color: #b1b1b1;
   font-weight: 400;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .chat-messages-date {
   color: #b1b1b1;
   font-size: 12px;
   font-weight: 600;
-  margin: 15px 0 5px 0;
+  margin: 15px 0 15px 0;
   text-align: center;
 }
 
 .chat-messages-date::before,
-.chat-messages-date::after {
+.dialogues-chat-messages-date::before,
+.chat-messages-date::after,
+.dialogues-chat-messages-date::after {
   content: '';
   display: inline-block;
   position: relative;
@@ -357,14 +358,20 @@
   background-color: #b1b1b1;
 }
 
-.chat-messages-date::before {  
+.chat-messages-date::before,
+.dialogues-chat-messages-date::before {  
   left: -15px;
   margin-left: -50%;
 }
 
-.chat-messages-date::after {
+.chat-messages-date::after,
+.dialogues-chat-messages-date::after {
   left: 15px;
   margin-right: -50%;
+}
+
+.chat-message {
+  margin-top: 10px;
 }
 
 .chat-input {

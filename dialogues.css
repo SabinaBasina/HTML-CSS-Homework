@@ -1,9 +1,7 @@
 .dialogues-chats-list {
-  position: relative;
   width: 450px;
   height: 100%;
   border-right: 1px solid #e5e5e5;  
-  pointer-events: none;
 }
 
 .dialogues-messages {
@@ -15,17 +13,6 @@
   overflow: auto;
   width: 100%;
   height: 719px;  
-}
-
-.dialogues-chats-list-peoples::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: linear-gradient( rgba(255, 255, 255, 0) 96%, rgba(255, 255, 255, 1) 100% );
-  border-bottom-left-radius: 8px;
 }
 
 .dialogues-chats-list-peoples::-webkit-scrollbar {
@@ -203,7 +190,6 @@
 .message-content {
   display: flex;
   align-items: flex-end;
-  margin-top: 20px;
 }
 
 .from-John .chat-message {
@@ -221,6 +207,7 @@
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .chat-message .fa-pen {
@@ -261,6 +248,18 @@
   font-size: 20px;
   outline: none;  
   text-indent: 17px;
+}
+
+.dialogues-chat-messages-date {
+  color: #b1b1b1;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 25px 0 25px 0;
+  text-align: center;
+}
+
+.dialogues-messages-content .message {
+  margin-top: 10px;
 }
 
 .dialogues-messages-input-add {
